@@ -1,0 +1,17 @@
+# O que nunca sobe para o GitHub.
+# Anotações pessoais e rascunhos ficam aqui e fora do repositório.
+rascunhos/
+anotacoes-pessoais.md
+
+# Chaves, senhas e configurações locais: nunca, em arquivo nenhum.
+.env
+.env.*
+*.key
+*.token
+configuracao.local.*
+.claude/settings.local.json
+
+# Arquivos do sistema.
+.DS_Store
+Thumbs.db
+desktop.ini
