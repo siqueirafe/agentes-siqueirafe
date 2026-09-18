@@ -31,7 +31,8 @@ RADAR.md.
   mais de 7 dias ou já dada em briefing anterior.
 - Os arquivos do dia: fontes/AAAA-MM-DD.md (o que o pesquisador achou),
   verificacao/AAAA-MM-DD.md (o que o verificador conferiu),
-  diario/AAAA-MM-DD.md (o briefing) e index.html (o diário no ar, gerado a
+  diario/AAAA-MM-DD.md (o briefing), conversa/AAAA-MM-DD.md (a conversa
+  para o time, do puxa-conversa) e index.html (o diário no ar, gerado a
   partir de modelo-index.html). Nunca apagar um dia anterior.
 - Quem revisa só lê: o guarda nunca altera arquivo.
 - Chave, senha ou token nunca entram em arquivo nenhum. RADAR.md fica no

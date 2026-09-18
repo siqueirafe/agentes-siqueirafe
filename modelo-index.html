@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITULO}}</title>
+  <style>
+    :root { color-scheme: light dark; --papel: #f5f2eb; --tinta: #282720; --tinta-2: #4a4840; --apagado: #6f6b61; --linha: #d6cfc0; --terra: #a94e32; --terra-escura: #8a3f28; }
+    @media (prefers-color-scheme: dark) { :root { --papel: #1f1e1a; --tinta: #efeae0; --tinta-2: #cfc9bc; --apagado: #a39d90; --linha: #3c392f; --terra: #d97a55; --terra-escura: #e69373; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--papel); color: var(--tinta); font-family: ui-sans-serif, system-ui, "Segoe UI", sans-serif; font-size: 17px; line-height: 1.55; }
+    main { max-width: 680px; margin: 0 auto; padding: 36px 20px 56px; }
+    .selo { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--terra-escura); font-weight: 600; margin: 0 0 12px; }
+    h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(30px, 6vw, 44px); line-height: 1.08; margin: 0 0 6px; }
+    .data { color: var(--apagado); margin: 0 0 28px; }
+    article h2 { font-family: Georgia, serif; font-weight: 600; font-size: 22px; margin: 28px 0 8px; line-height: 1.2; }
+    article h3 { font-size: 17px; margin: 22px 0 6px; }
+    article p { margin: 0 0 12px; color: var(--tinta-2); }
+    article a { color: var(--terra-escura); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .primeira { font-family: Georgia, serif; font-size: 21px; line-height: 1.4; color: var(--tinta); border-left: 3px solid var(--terra); padding-left: 14px; margin: 0 0 24px; }
+    .anteriores { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--linha); }
+    .anteriores h2 { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--apagado); margin: 0 0 10px; }
+    .anteriores ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+    footer { margin-top: 40px; color: var(--apagado); font-size: 13px; border-top: 1px solid var(--linha); padding-top: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="selo">O radar de hoje</p>
+    <h1>{{TITULO}}</h1>
+    <p class="data">{{DATA}}</p>
+    <article>
+{{BRIEFING}}
+    </article>
+    <section class="anteriores">
+      <h2>Dias anteriores</h2>
+      <ul>
+{{ANTERIORES}}
+      </ul>
+    </section>
+    <footer>Feito na Formação Claude, do Chat ao Code. Um time de agentes pesquisa, confere e escreve; toda afirmação tem fonte; nada é enviado a ninguém.</footer>
+  </main>
+</body>
+</html>

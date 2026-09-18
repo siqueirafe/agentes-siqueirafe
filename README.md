@@ -14,7 +14,7 @@ O diário fica publicado em [A URL DO GITHUB PAGES, DEPOIS DE LIGAR].
 - `RADAR.md`: as regras do radar (assunto, fontes, limites, tom).
 - `CLAUDE.md`: a memória do projeto, lida pelo Claude Code ao abrir a pasta.
 - `.claude/agents/`: o time (pesquisador, verificador, redator, guarda e
-  [O NOME DO SEU AGENTE]).
+  puxa-conversa, que transforma as notícias do dia em conversa para o time).
 - `.claude/skills/radar/`: a pauta que chama os agentes na ordem.
 - `diario/`: um arquivo por dia, do mais antigo ao mais recente.
 - `index.html`: o diário no ar.
