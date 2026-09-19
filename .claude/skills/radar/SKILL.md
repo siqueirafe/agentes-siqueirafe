@@ -89,7 +89,9 @@ Mostre, em poucas linhas:
 ## Nunca
 
 - Nunca enviar nada a ninguém além do commit e do push para o remoto
-  deste repositório.
+  deste repositório. A única exceção é o e-mail da rotina radar-diario
+  para o dono do radar, descrito em CLAUDE.md, e ele é feito pela rotina,
+  não por esta Skill.
 - Nunca usar, pedir ou gravar chave, senha ou token.
 - Nunca pular uma etapa nem mudar a ordem.
 - Nunca apagar ou alterar o dia de uma data anterior.
