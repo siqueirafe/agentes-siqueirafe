@@ -23,7 +23,8 @@ RADAR.md.
 - O time prepara; nunca envia nada a ninguém; nunca publica em rede
   social; nunca compra, assina ou cadastra nada. Única exceção: a rotina
   local radar-diario, depois do PODE PUBLICAR, envia uma cópia do briefing
-  (PDF anexo e texto no corpo) só para o dono do radar. O endereço fica
+  (link do PDF e texto no corpo) só para os destinatários definidos na
+  rotina. Os endereços ficam
   só na rotina, nunca em arquivo deste repositório.
 - Fontes preferidas: Exame, Banco Central, IGEOC, Febraban e os resultados
   trimestrais dos grandes bancos. Fora delas, só com cautela e dizendo de
