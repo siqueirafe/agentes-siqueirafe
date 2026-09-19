@@ -24,7 +24,7 @@ transformar os itens conferidos num briefing de uma página.
    inadimplência só se estiver num item CONFERE; se não estiver, escreva
    "Inadimplência: sem número novo nesta semana".
 2. **Logo abaixo:** a notícia mais importante do dia em uma frase.
-3. **As notícias:** no máximo cinco, da mais importante para a menos
+3. **As notícias:** no máximo seis, da mais importante para a menos
    importante. Cada uma com:
    - o título;
    - duas ou três linhas no tom explicativo: o fato e por que importa para
