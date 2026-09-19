@@ -45,10 +45,14 @@ pesquisador, verificador, redator e guarda, acione cada um deles com a
 data de hoje.
 
 Inclua o que cada um devolver no fim do briefing, numa seção com o nome
-dele (por exemplo, `## puxa-conversa`):
+dele. A seção do `puxa-conversa` se chama
+`## PARA O NOSSO TIME DE MILHÕES`; a de qualquer outro agente leva o nome
+do agente:
 
 - em diario/AAAA-MM-DD.md, no fim do arquivo;
 - em index.html, no fim do conteúdo do briefing, antes de `</article>`,
+  dentro de `<section class="time">...</section>` (o quadro laranja do
+  modelo), com o nome da seção num `<h2>`,
   em HTML simples.
 
 Não altere mais nada do briefing. Se não houver agente além dos quatro,

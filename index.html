@@ -5,30 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Radar de Recuperação de Crédito</title>
   <style>
-    :root { color-scheme: light dark; --papel: #f5f2eb; --tinta: #282720; --tinta-2: #4a4840; --apagado: #6f6b61; --linha: #d6cfc0; --terra: #a94e32; --terra-escura: #8a3f28; }
-    @media (prefers-color-scheme: dark) { :root { --papel: #1f1e1a; --tinta: #efeae0; --tinta-2: #cfc9bc; --apagado: #a39d90; --linha: #3c392f; --terra: #d97a55; --terra-escura: #e69373; } }
+    :root { color-scheme: light dark; --papel: #ffffff; --fundo: #f4f5f7; --tinta: #2b2b2b; --tinta-2: #4a4a4a; --apagado: #6b6b6b; --linha: #e3e3e3; --laranja: #ec7000; --laranja-link: #c75f00; --laranja-claro: #fff1e3; --azul: #003a70; --azul-titulo: #003a70; --sobre-laranja: #ffffff; }
+    @media (prefers-color-scheme: dark) { :root { --papel: #151b23; --fundo: #0f141a; --tinta: #eef1f5; --tinta-2: #c9d0d9; --apagado: #98a2ae; --linha: #2a3440; --laranja: #d96800; --laranja-link: #ff9a3d; --laranja-claro: #2a1e12; --azul: #0e4c8a; --azul-titulo: #9cc3ee; --sobre-laranja: #ffffff; } }
     * { box-sizing: border-box; }
-    body { margin: 0; background: var(--papel); color: var(--tinta); font-family: ui-sans-serif, system-ui, "Segoe UI", sans-serif; font-size: 17px; line-height: 1.55; }
-    main { max-width: 680px; margin: 0 auto; padding: 36px 20px 56px; }
-    .selo { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--terra-escura); font-weight: 600; margin: 0 0 12px; }
-    h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(30px, 6vw, 44px); line-height: 1.08; margin: 0 0 6px; }
-    .data { color: var(--apagado); margin: 0 0 28px; }
-    article h2 { font-family: Georgia, serif; font-weight: 600; font-size: 22px; margin: 28px 0 8px; line-height: 1.2; }
-    article h3 { font-size: 17px; margin: 22px 0 6px; }
+    body { margin: 0; background: var(--fundo); color: var(--tinta); font-family: Arial, "Segoe UI", Helvetica, sans-serif; font-size: 17px; line-height: 1.55; }
+    .topo { background: var(--laranja); color: var(--sobre-laranja); }
+    .topo-dentro { max-width: 720px; margin: 0 auto; padding: 28px 20px 22px; }
+    .selo { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; font-weight: 700; margin: 0 0 8px; opacity: .92; }
+    h1 { font-weight: 700; font-size: clamp(28px, 6vw, 40px); line-height: 1.1; margin: 0 0 6px; }
+    .data { margin: 0; font-size: 15px; }
+    main { max-width: 720px; margin: 0 auto; padding: 0 20px 56px; background: var(--papel); }
+    article { padding-top: 1px; }
+    .primeira { background: var(--azul); color: #ffffff; font-size: 19px; line-height: 1.45; padding: 16px 18px; border-left: 6px solid var(--laranja); margin: 0 -20px 24px; }
+    article h2 { color: var(--azul-titulo); font-weight: 700; font-size: 20px; margin: 26px 0 6px; line-height: 1.25; }
+    article h3 { color: var(--azul-titulo); font-size: 17px; margin: 20px 0 6px; }
     article p { margin: 0 0 12px; color: var(--tinta-2); }
-    article a { color: var(--terra-escura); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-    .primeira { font-family: Georgia, serif; font-size: 21px; line-height: 1.4; color: var(--tinta); border-left: 3px solid var(--terra); padding-left: 14px; margin: 0 0 24px; }
-    .anteriores { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--linha); }
+    article a { color: var(--laranja-link); font-weight: 700; text-decoration: none; }
+    article a:hover { text-decoration: underline; }
+    .time { background: var(--laranja-claro); border-top: 5px solid var(--laranja); padding: 4px 18px 10px; margin: 32px -20px 0; }
+    .time > h2 { display: inline-block; background: var(--azul); color: #ffffff; font-size: 15px; letter-spacing: .05em; padding: 6px 12px; margin: 18px 0 8px; }
+    .anteriores { margin-top: 40px; padding-top: 18px; border-top: 3px solid var(--laranja); }
     .anteriores h2 { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--apagado); margin: 0 0 10px; }
     .anteriores ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+    .anteriores a { color: var(--laranja-link); font-weight: 700; text-decoration: none; }
     footer { margin-top: 40px; color: var(--apagado); font-size: 13px; border-top: 1px solid var(--linha); padding-top: 14px; }
   </style>
 </head>
 <body>
+  <header class="topo">
+    <div class="topo-dentro">
+      <p class="selo">O radar de hoje</p>
+      <h1>Radar de Recuperação de Crédito</h1>
+      <p class="data">18 de setembro de 2026</p>
+    </div>
+  </header>
   <main>
-    <p class="selo">O radar de hoje</p>
-    <h1>Radar de Recuperação de Crédito</h1>
-    <p class="data">18 de setembro de 2026</p>
     <article>
 <p class="primeira">Regra nova: sim. Inadimplência: 51,06% da população adulta (Serasa, agosto/2026).<br>O STJ decidiu que salários podem ser penhorados para pagar dívidas comuns, mudando as regras da cobrança judicial no país.</p>
 
@@ -50,12 +61,10 @@
 <h2>6. Inadimplência recua pelo segundo mês seguido no Acre, enquanto índice nacional volta a subir, aponta Serasa</h2>
 <p>No Acre, 47,35% dos adultos têm dívidas em atraso, com queda de 0,10 ponto percentual ante julho — o segundo mês seguido de queda no estado, que fica 3,71 pontos percentuais abaixo da média nacional. No Brasil como um todo, a Serasa registrou 51,06% da população adulta inadimplente em agosto (83,9 milhões de pessoas, R$ 592 bilhões em dívidas, média de R$ 7.049,68 por pessoa). Mostra que a melhora recente na inadimplência não é uniforme entre os estados. <a href="https://portalacre.com.br/2026/09/inadimplencia-recua-pelo-segundo-mes-seguido-no-acre-enquanto-indice-nacional-volta-a-subir-aponta-serasa/">Leia no Portal Acre</a>.</p>
 
-<h2>O que não conferiu</h2>
-<p>Nada: todos os itens conferiram.</p>
-
 <p>Escrito em 18/09/2026, 21h.</p>
 
-      <h2>puxa-conversa</h2>
+      <section class="time">
+      <h2>PARA O NOSSO TIME DE MILHÕES</h2>
       <p>Bom dia, time. O STJ mexeu na penhora de salário essa semana, e isso tem cara de que vai aparecer na ligação.</p>
 
       <h3>Salário agora pode ser penhorado por dívida comum</h3>
@@ -77,6 +86,7 @@
       <p>Quem já trabalhou carteira de varejo ou de fintech: o que muda na ligação em comparação com a de banco?</p>
 
       <p>Pra quem quiser ir além: se desse pra mudar uma coisa no roteiro de ligação por causa do que saiu essa semana, o que vocês mudariam?</p>
+      </section>
     </article>
     <section class="anteriores">
       <h2>Dias anteriores</h2>

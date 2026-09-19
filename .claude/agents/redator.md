@@ -32,8 +32,8 @@ transformar os itens conferidos num briefing de uma página.
    - o link.
 4. **Opinião:** se um item é opinião, diga que é opinião e de quem
    ("Na opinião de ..., segundo a Exame").
-5. **O que não conferiu:** uma seção só com os títulos dos itens NÃO
-   CONFERE e NÃO ABRIU, sem link e sem resumo.
+5. **O que não conferiu fica de fora:** os itens NÃO CONFERE e NÃO ABRIU
+   não aparecem no briefing. Eles ficam registrados só em verificacao/.
 6. **Rodapé:** a data e a hora em que o briefing foi escrito.
 
 O briefing precisa caber em uma página.
